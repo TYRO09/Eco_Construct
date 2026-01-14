@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Model Viewer</title>
+
+ 
+  <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      background: #eaeaea;
+    }
+
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+<h1>Old Shopping Complex</h1>
+<model-viewer
+  src="asset\model.glb"
+  alt="Old Shopping Complex"
+  camera-controls
+  auto-rotate
+  auto-rotate-delay="0"
+  shadow-intensity="1"
+  exposure="1"
+  environment-image="neutral"
+  ar
+  loading="eager"
+>
+</model-viewer>
+
+
+</body>
+</html>
+
